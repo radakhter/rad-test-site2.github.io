@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Name - Welcome!</title>
+    <style>
+        /* Basic CSS for structure visibility - Replace with your style.css */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background-color: #f0f0f0; padding: 20px; text-align: center; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 20px; }
+        nav ul li a { text-decoration: none; color: #333; }
+        .hero { background-color: #e9e9e9; padding: 50px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5em; }
+        .content-section { padding: 40px 20px; text-align: center; }
+        .content-section h2 { margin-bottom: 20px; }
+        .services-container { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .service-item { border: 1px solid #ddd; padding: 20px; margin: 10px; width: 30%; min-width: 250px; box-sizing: border-box; }
+        .contact-section { background-color: #f9f9f9; padding: 40px 20px; text-align: center;}
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Your Business Name / Logo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Our Business!</h1>
+        <p>Your compelling tagline or a brief introduction to what you do.</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>
+            Tell your visitors about your company. What is your mission?
+            What is your story? Why should they choose you?
+        </p>
+        <p>
+            You can add more paragraphs or images here.
+        </p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Service 1</h3>
+                <p>Briefly describe your first service here. Highlight the key benefits.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 2</h3>
+                <p>Briefly describe your second service here. Highlight the key benefits.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 3</h3>
+                <p>Briefly describe your third service here. Highlight the key benefits.</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Ready to get started or have questions? Reach out to us!</p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>
+            Your Business Address<br>
+            123 Main Street<br>
+            Anytown, USA 12345
+        </p>
+        </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Your Business Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script to update the year in the footer
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
